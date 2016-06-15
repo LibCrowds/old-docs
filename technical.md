@@ -24,24 +24,24 @@ software mentioned below is also available via GitHub. Refer to the
 ## Configuration
 
 Copies of the configuration files used on the platform can be found in the
-LibCrowds Dropbox account, where a README file lists the actual locations of
-each configuration file on the server. Whenever a new configuration file is added,
-a symbolic link to that file should be created as follows:
+LibCrowds [Dropbox](https://www.dropbox.com/login) account, where a README file
+lists the actual locations of each configuration file on the server. Whenever a
+new configuration file is added, a symbolic link to that file should be created
+as follows:
 
 ```
 ln -s /path/to/config/file /etc/libcrowds/config
 ```
 
-The `/etc/libcrowds/config` folder is automatcially synced with Dropbox.
+This folder is automatically synced with Dropbox, to provide backups of the
+server configuration.
 
 
 ## Discourse
 
-Discourse is the software used for the LibCrowds community forum, further
-documentation can be found here:
+Documentation for the forum software can be found here:
 
 [Discourse Docs](https://github.com/discourse/discourse/blob/master/docs)
-[Discourse Forum](https://meta.discourse.org/)
 
 
 ## Themes
@@ -50,18 +50,18 @@ The main LibCrowds theme can be found here:
 
 [libcrowds-pybossa-theme](https://github.com/LibCrowds/libcrowds-pybossa-theme)
 
-The supplementry Discourse theme can be found here:
+The supplementary Discourse theme can be found here:
 
 [libcrowds-discourse-theme](https://github.com/LibCrowds/libcrowds-discourse-theme)
 
 
 ## Plugins
 
-Various plugins are used to provide additional functionality. The LibCrowds theme
-is designed to integrate with some of these plugins but does not necessarily
-require them. The LibCrowds [About page](http://www.libcrowds.com/about) lists
-the plugins currently running on the server and provides links to the relevant
-repositories for each.
+Various plugins are used to provide additional functionality, with the LibCrowds theme
+designed to integrate with some of these plugins, but not necessarily require them.
+The LibCrowds [About page](http://www.libcrowds.com/about) lists the plugins
+currently running on the server and provides links to the relevant repositories
+for each.
 
 
 ## Backups
@@ -83,8 +83,8 @@ days and weekly backups kept for four weeks.
 
 ## Email
 
-[Mailgun](https://www.mailgun.com/) is used to forward all incoming emails to the
-server to **crowdsourcing@bl.uk**. This email address also receives any PyBossa
+[Mailgun](https://www.mailgun.com/) is used to forward all incoming emails to
+crowdsourcing@bl.uk. This email address also receives any PyBossa
 error logs, as well as updates from various external services (Digital Ocean,
 Twitter etc.).
 
@@ -96,7 +96,7 @@ LibCrowds is hosted at [Digital Ocean](https://www.digitalocean.com/).
 
 ## Startup
 
-[Supervisor](http://supervisord.org/) handles automatic starting of programs
+[Supervisor](http://supervisord.org/) handles the automatic starting of programs
 whenever the system reboots.
 
 
