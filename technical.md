@@ -23,18 +23,22 @@ software mentioned below is also available via GitHub. Refer to the
 
 ## Configuration
 
-Copies of the configuration files used on the platform can be found in the
-LibCrowds [Dropbox](https://www.dropbox.com/login) account, where a README file
-lists the actual locations of each configuration file on the server. Whenever a
-new configuration file is added, a symbolic link to that file should be created
-as follows:
+Copies of the various non-standard configuration files used on the platform can
+be found in the LibCrowds [Dropbox](https://www.dropbox.com/login) account.
+Whenever a new configuration file or script is added, that needs to be backed up,
+a symbolic link to that file should be created as follows:
 
 ```
-ln -s /path/to/config/file /etc/libcrowds/config
+# For the file /etc/program/settings.conf
+mkdir -p /etc/libcrowds-config/etc/program/
+ln -s /etc/program/settings.conf /etc/libcrowds-config/etc/program/settings.conf
+
+# To confirm that the upload works
+/etc/cron.daily/db-uploader
 ```
 
-This folder is automatically synced with Dropbox, to provide backups of the
-server configuration.
+This folder is uploaded to dropbox daily (with the actual files, rather than
+the symbolic links).
 
 
 ## Discourse
@@ -66,19 +70,34 @@ for each.
 
 ## Backups
 
-The PostgreSQL database that holds all data for the platform is backed up daily,
-using this script:
-
-[PSQL-Dropbox-Backups](https://github.com/alexandermendes/PSQL-Dropbox-Backups)
-
+The PostgreSQL database that holds all data for the PyBossa application is backed
+up daily ([using this script](https://github.com/alexandermendes/PSQL-Dropbox-Backups)).
 Backups are stored both locally and on Dropbox, with daily backups kept for seven
 days and weekly backups kept for four weeks.
 
+The Discourse database is backed up daily, with backups kept for 7 days.
+Again, backups are stored both locally and on Dropbox.
 
-## Security
+Files uploaded to PyBossa (avatars etc.) are backed up daily, with only the most
+recent backup kept.
 
-- The firewall is configured using UFW.
-- The SSL certificate is issued by [Let's Encrypt](https://letsencrypt.org/).
+Along with the backup of configuration files, mentioned above, this should provide
+everything needed to entirely rebuild the system, should any disasters happen!
+
+
+## Firewall
+
+The firewall is configured using UFW, check the rules by running the following
+command on the server:
+
+```
+sudo ufw status verbose
+```
+
+
+## SSL
+
+The SSL certificate is issued by [Let's Encrypt](https://letsencrypt.org/).
 
 
 ## Email
@@ -104,7 +123,8 @@ whenever the system reboots.
 
 The following cron jobs are running on the server:
 
-- The database is backed up daily.
-- Uploaded images are optimised weekly.
-- Security updates are downloaded and installed weekly.
-- The SSL certificate is renewed weekly.
+- Backup the main PSQL database, both locally and on Dropbox (daily).
+- Upload config files, the Discourse database and PyBossa uploads to Dropbox (daily).
+- Optimise uploaded images (weekly).
+- Download and install security updates (weekly).
+- Renew SSL certificate (weekly).
