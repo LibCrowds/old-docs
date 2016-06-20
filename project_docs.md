@@ -1,4 +1,4 @@
-# LibCrowds Technical Documentation
+# LibCrowds Project Documentation
 
 The following document describes how to create and manage LibCrowds projects.
 The focus here is on details specific to the LibCrowds platform, more general
