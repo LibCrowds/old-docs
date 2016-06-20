@@ -16,17 +16,17 @@ for installation, configuration and deployment is here:
 ## Version control
 
 The [LibCrowds organisation page](https://github.com/LibCrowds) contains all of
-the open-source software specific to the LibCrowds platform. Much of the additional
-software mentioned below is also available via GitHub. Refer to the
+the open-source software, specific to the LibCrowds platform. Much of the
+additional software mentioned below is also available on GitHub. Refer to the
 [GitHub Guides](https://guides.github.com/) for details of how to contribute.
 
 
 ## Configuration
 
-Copies of the various non-standard configuration files used on the platform can
+Copies of the non-standard configuration files used on the platform can
 be found in the LibCrowds [Dropbox](https://www.dropbox.com/login) account.
-Whenever a new configuration file or script is added, that needs to be backed up,
-a symbolic link to that file should be created as follows:
+Whenever a new configuration file is added a symbolic link to that file
+should be created as follows:
 
 ```
 # For the file /etc/program/settings.conf
