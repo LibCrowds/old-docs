@@ -21,21 +21,21 @@ project, including:
 
 ## Creating a new project
 
-The code for the LibCrowds projects can be found via the
-[LibCrowds GitHub organisation page](https://github.com/LibCrowds). There are
-various ways to create a new project, such as via the web interface, the API
-or the command line, all of which are described further in the
+The easiest way to create LibCrowds projects is probably to use
+[pybossa-github-builder](https://github.com/alexandermendes/pybossa-github-builder),
+which is a plugin that automates much of the setup process. The steps to create
+a new project using this plugin are as follows:
+
+1. **Sign in** to LibCrowds.
+2. Visit [http://www.libcrowds.com/github/new_project](http://www.libcrowds.com/github/new_project).
+3. Fill in the form and click **Create**. The GitHub URL for your project can be found on the
+[LibCrowds GitHub organisation page](https://github.com/LibCrowds)
+(e.g. [https://github.com/LibCrowds/project-convert-a-card](https://github.com/LibCrowds/project-convert-a-card)).
+6. From the **Project Dashboard**, click **Import Tasks** and choose the relevant importer (e.g. Flickr).
+7. From the **Project Dashboard**, click **Publish**.
+
+Note that there are various ways to create new projects, all of which are described in the
 [PyBossa documentation](http://docs.pybossa.com/en/latest/user/overview.html).
-
-A third way is to import the project directly from GitHub, using the following
-method:
-
-1.
-2.
-3.
-4.
-5.
-
 
 
 ## Analysing results
