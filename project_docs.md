@@ -42,7 +42,7 @@ described in the [PyBossa documentation](http://docs.pybossa.com/en/latest/user/
 
 ## Analysing results
 
-A seperate application has been create to handle the analysis of results. The
+A separate application has been create to handle the analysis of results. The
 analysis process is automated, as far as possible, according to the rules
 defined for each category of project (which happens during the development
 stage).
