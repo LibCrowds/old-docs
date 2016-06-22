@@ -8,11 +8,11 @@ information can be found within the
 
 ## Project ownership
 
-Each project is assigned an owner who will be responsible for creating and
-maintaining that project. Project owners have access to a dashboard, accessible
-via the **Open project** menu option, or the project portal page. The
-dashboard provides access to various settings and additional pages for the
-project, including:
+Each project is assigned an owner who will be responsible for its creation and
+maintenance. Project owners have access to a dashboard, accessible
+via the [Open Project](https://www.libcrowds.com/account/alexmendes/projects)
+menu, which provides access to various settings and additional information
+regarding the project, including:
 
 - **Analysis:** A link to the results analysis application (see below).
 - **Results:** View the current results, which can be useful for spot checking.
@@ -21,21 +21,23 @@ project, including:
 
 ## Creating a new project
 
-The easiest way to create LibCrowds projects is probably to use
+The easiest way to create a LibCrowds project is probably to use
 [pybossa-github-builder](https://github.com/alexandermendes/pybossa-github-builder),
-which is a plugin that automates much of the setup process. The steps to create
+which is a plugin that automates much of the setup process. The basic steps to create
 a new project using this plugin are as follows:
 
-1. **Sign in** to LibCrowds.
-2. Visit [http://www.libcrowds.com/github/new_project](http://www.libcrowds.com/github/new_project).
-3. Fill in the form and click **Create**. The GitHub URL for your project can be found on the
-[LibCrowds GitHub organisation page](https://github.com/LibCrowds)
-(e.g. [https://github.com/LibCrowds/project-convert-a-card](https://github.com/LibCrowds/project-convert-a-card)).
-6. From the **Project Dashboard**, click **Import Tasks** and choose the relevant importer (e.g. Flickr).
-7. From the **Project Dashboard**, click **Publish**.
+1. Visit the [Create Project from GitHub](http://www.libcrowds.com/github/new_project) page.
+2. Search for a GitHub repository.
+3. Choose the import settings and create a new project.
+4. Import some tasks.
+5. Set the task redundancy.
+6. Publish.
 
-Note that there are various ways to create new projects, all of which are described in the
-[PyBossa documentation](http://docs.pybossa.com/en/latest/user/overview.html).
+Visit the [LibCrowds GitHub page](https://github.com/LibCrowds?utf8=%E2%9C%93&query=project)
+for specific instructions regarding your type of project.
+
+Note that there are various other ways to create new projects, all of which are
+described in the [PyBossa documentation](http://docs.pybossa.com/en/latest/user/overview.html).
 
 
 ## Analysing results
