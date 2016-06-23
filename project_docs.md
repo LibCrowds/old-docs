@@ -33,8 +33,9 @@ Following is a general outline for all project types.
 
 The easiest way to create a LibCrowds project is probably to use
 [pybossa-github-builder](https://github.com/alexandermendes/pybossa-github-builder),
-which is a plugin that automates much of the setup process. The basic steps to create
-a new project using this plugin are as follows:
+which is a plugin that automates much of the setup process. It also provides a way
+to import templates for the new results and tutorial pages, via the web interface. 
+The basic steps to create a new project using this plugin are as follows:
 
 1. Visit the [Create Project from GitHub](http://www.libcrowds.com/github/new_project) page.
 2. Search for a GitHub repository.
