@@ -10,7 +10,7 @@ familiar with the main [PyBossa Documentation](http://docs.pybossa.com/en/latest
 The suggested workflow for developing a new project is:
 
 - Create a new GitHub repository.
-    - The convention is to name these project-<project-category>.
+    - The convention is to name these *project-{project-category}.*
 - Clone this repository and add the following files:
     - **project.json:** A JSON file containing project metadata.
     - **template.html:** The task presenter via which contributions will be made.
@@ -29,7 +29,6 @@ The suggested workflow for developing a new project is:
     - **splash_attribution**: Any attribution required for the splash image.
     - **tutorial_video**: A link to an embeddable tutorial video (e.g. from Flickr).
 - Add an analyser for the category to [libcrowds-analyst](https://github.com/LibCrowds/libcrowds-analyst).
-    - See the application's repository for details.
 
 
 ## Updating the server
