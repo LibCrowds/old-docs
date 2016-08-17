@@ -19,7 +19,21 @@ regarding the project, including:
 - **Statistics:** Contribution statistics for the project.
 
 
-## Workflow
+## Anatomy of a project
+
+Apart from establishing the general requirements of the project (it's input and the desired 
+output),  when developing a new type of project the following components should to be 
+provided by the project owner:
+
+- A thumbnail image, such as those displayed on https://www.libcrowds.com/project
+- A larger splash image used on the project introduction page, including any required 
+attribution for that image.
+- A description of the project to be used on the project introduction page.
+- A tutorial page describing how the project works.
+- An optional tutorial video to be embedded in the project introduction page.
+
+
+## General workflow
 
 For specific details of the workflow established for your project, please see
 the documentation available for each type of project on the
@@ -75,3 +89,19 @@ final results can be download from the
 spreadsheet will be used depends on the workflow established for your particular
 project. For example, it might be checked and edited before being sent off to
 metadata services for the creation of catalogue records.
+
+
+## Uploading images to Flickr
+
+Here are some basic guidelines for uploading images to Flickr.
+
+1. Log in to [Flickr](https://www.flickr.com) using the LibCrowds credentials.
+2. Click the upload icon at the top right of the screen.
+3. Select your images (in batches of 500 or less, errors may occur otherwise).
+4. Click **Add to albums** and select or create an album for **this specific LibCrowds project**.
+5. Click **Add to albums** and select or create an album for **this specific LibCrowds project**.
+6. Under **Owner settings** select **Public Domain Dedication (CC0)**.
+7. Optionally, add **tags** and a generic description about the images.
+
+
+
