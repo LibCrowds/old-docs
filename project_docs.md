@@ -101,7 +101,8 @@ Here are some basic guidelines for uploading images to Flickr.
 4. Click **Add to albums** and select or create an album for **this specific LibCrowds project**.
 5. Click **Add to albums** and select or create an album for **this specific LibCrowds project**.
 6. Under **Owner settings** select **Public Domain Dedication (CC0)**.
-7. Optionally, add **tags** and a generic description about the images.
+7. Optionally, add **tags** and a generic **description** about the images.
+8. Click **Upload n Photos** at the top right of the screen.
 
 
 
