@@ -21,12 +21,12 @@ regarding the project, including:
 
 ## Anatomy of a project
 
-Apart from establishing the general requirements of the project (it's input and the desired 
-output),  when developing a new type of project the following components should to be 
+Apart from establishing the general requirements of the project (it's input and the desired
+output),  when developing a new type of project the following components should to be
 provided by the project owner:
 
 - A thumbnail image, such as those displayed on https://www.libcrowds.com/project
-- A larger splash image used on the project introduction page, including any required 
+- A larger splash image used on the project introduction page, including any required
 attribution for that image.
 - A description of the project to be used on the project introduction page.
 - A tutorial page describing how the project works.
@@ -48,15 +48,16 @@ Following is a general outline for all project types.
 The easiest way to create a LibCrowds project is probably to use
 [pybossa-github-builder](https://github.com/alexandermendes/pybossa-github-builder),
 which is a plugin that automates much of the setup process. It also provides a way
-to import templates for the new results and tutorial pages, via the web interface. 
+to import templates for the new results and tutorial pages, via the web interface.
 The basic steps to create a new project using this plugin are as follows:
 
-1. Visit the [Create Project from GitHub](http://www.libcrowds.com/github/new_project) page.
-2. Search for a GitHub repository.
-3. Configure the import and create a new project.
-4. Import some tasks.
-5. Set the task redundancy.
-6. Publish.
+1. Create a new project.
+2. Via the project dashboard click 'Sync with GitHub'.
+3. Search for a GitHub repository.
+4. Configure the import and update the project.
+5. Import some tasks.
+6. Set the task redundancy.
+7. Publish.
 
 Note that there are various other ways to create new projects, all of which are
 described in the [PyBossa documentation](http://docs.pybossa.com/en/latest/user/overview.html).
@@ -103,6 +104,3 @@ Here are some basic guidelines for uploading images to Flickr.
 6. Under **Owner settings** select **Public Domain Dedication (CC0)**.
 7. Optionally, add **tags** and a generic **description** about the images.
 8. Click **Upload n Photos** at the top right of the screen.
-
-
-
