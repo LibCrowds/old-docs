@@ -15,7 +15,8 @@ for installation, configuration and deployment is here:
 
 ## Logging
 
-Errors are logged using [Sentry](https://sentry.io/libcrowds/) and emailed to crowdsourcing@bl.uk.
+Errors are logged using [Sentry](https://sentry.io/libcrowds/), with new issues 
+emailed to crowdsourcing@bl.uk.
 
 
 ## Version control
