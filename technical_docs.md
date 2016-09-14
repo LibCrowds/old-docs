@@ -13,6 +13,11 @@ for installation, configuration and deployment is here:
 [PyBossa Docs](http://docs.pybossa.com/en/latest/)
 
 
+## Logging
+
+Errors are logged using [Sentry](https://sentry.io/libcrowds/) and emailed to crowdsourcing@bl.uk.
+
+
 ## Version control
 
 The [LibCrowds organisation page](https://github.com/LibCrowds) contains all of
@@ -23,22 +28,28 @@ additional software mentioned below is also available on GitHub. Refer to the
 
 ## Configuration
 
-Copies of the non-standard configuration files used on the platform can
-be found in the LibCrowds [Dropbox](https://www.dropbox.com/login) account.
-Whenever a new configuration file is added a symbolic link to that file
-should be created as follows:
+Copies of any configuration files used on the platform can generally be found at:
 
 ```
-# For the file /etc/program/settings.conf
-mkdir -p /etc/libcrowds-config/etc/program/
-ln -s /etc/program/settings.conf /etc/libcrowds-config/etc/program/settings.conf
-
-# To confirm that the upload works
-/etc/cron.daily/db-uploader
+/etc/{application} # e.g. /etc/pybossa
 ```
 
-This folder is uploaded to dropbox daily (with the actual files, rather than
-the symbolic links).
+Non-standard configuration files are also backed up to the LibCrowds 
+[Dropbox](https://www.dropbox.com/login) account. To back up any new configuration
+files a symbolic link to that file should be created as follows:
+
+```
+# For the file /etc/{application}/{settings-file}
+mkdir -p /etc/libcrowds-config/etc/{application}/
+ln -s /etc/{application}/{settings-file} /etc/libcrowds-config/etc/{application}/{settings-file}
+```
+
+Files with symbolic links found in in `/etc/libcrowds-config` will be backed up daily. To 
+confirm that the upload works run:
+
+```
+/etc/cron.daily/db-uploader config
+```
 
 
 ## Discourse
@@ -100,7 +111,7 @@ sudo ufw status verbose
 The SSL certificate is issued by [Let's Encrypt](https://letsencrypt.org/).
 
 
-## Email
+## Emails
 
 [Mailgun](https://www.mailgun.com/) is used to forward all incoming emails to
 crowdsourcing@bl.uk. This email address also receives any PyBossa
