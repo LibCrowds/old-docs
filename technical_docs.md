@@ -35,24 +35,6 @@ Copies of any configuration files used on the platform can generally be found at
 /etc/{application} # e.g. /etc/pybossa
 ```
 
-Non-standard configuration files are also backed up to the LibCrowds 
-[Dropbox](https://www.dropbox.com/login) account. To back up any new configuration
-files a symbolic link to that file should be created as follows:
-
-```
-# For the file /etc/{application}/{settings-file}
-mkdir -p /etc/libcrowds-config/etc/{application}/
-ln -s /etc/{application}/{settings-file} /etc/libcrowds-config/etc/{application}/{settings-file}
-```
-
-Files with symbolic links found in in `/etc/libcrowds-config` will be backed up daily. To 
-confirm that the upload works run:
-
-```
-/etc/cron.daily/db-uploader config
-```
-
-
 ## Discourse
 
 Documentation for the forum software can be found here:
@@ -92,9 +74,6 @@ Again, backups are stored both locally and on Dropbox.
 
 Files uploaded to PyBossa (avatars etc.) are backed up daily, with only the most
 recent backup kept.
-
-Along with the backup of configuration files, mentioned above, this should provide
-everything needed to entirely rebuild the system, should any disasters happen!
 
 
 ## Firewall
