@@ -5,28 +5,6 @@ been deployed, including references to additional, more in depth documentation
 related to the various pieces of software in use on the server.
 
 
-## PyBossa
-
-As LibCrowds is primarily a PyBossa platform, your main source of documentation
-for installation, configuration and deployment is here:
-
-[PyBossa Docs](http://docs.pybossa.com/en/latest/)
-
-
-## Logging
-
-Errors are logged using [Sentry](https://sentry.io/libcrowds/), with new issues 
-emailed to crowdsourcing@bl.uk.
-
-
-## Version control
-
-The [LibCrowds organisation page](https://github.com/LibCrowds) contains all of
-the open-source software, specific to the LibCrowds platform. Much of the
-additional software mentioned below is also available on GitHub. Refer to the
-[GitHub Guides](https://guides.github.com/) for details of how to contribute.
-
-
 ## Configuration
 
 Copies of any configuration files used on the platform can generally be found at:
@@ -35,6 +13,24 @@ Copies of any configuration files used on the platform can generally be found at
 /etc/{application} # e.g. /etc/pybossa
 ```
 
+Relevant folders for the current software stack include:
+
+- /etc/nginx
+- /etc/gunicorn
+- /etc/pybossa
+- /etc/pybossa-analyst
+- /etc/redis
+- /etc/supervisor
+
+
+## PyBossa
+
+As LibCrowds is primarily a PyBossa platform, your main source of documentation
+for installation, configuration and deployment is here:
+
+[PyBossa Docs](http://docs.pybossa.com/en/latest/)
+
+
 ## Discourse
 
 Documentation for the forum software can be found here:
@@ -42,15 +38,15 @@ Documentation for the forum software can be found here:
 [Discourse Docs](https://github.com/discourse/discourse/blob/master/docs)
 
 
+## Logging
+
+Errors are logged using [Sentry](https://sentry.io/libcrowds/), with new issues 
+emailed to crowdsourcing@bl.uk.
+
+
 ## Themes
 
-The main LibCrowds theme can be found here:
-
-[libcrowds-pybossa-theme](https://github.com/LibCrowds/libcrowds-pybossa-theme)
-
-The supplementary Discourse theme can be found here:
-
-[libcrowds-discourse-theme](https://github.com/LibCrowds/libcrowds-discourse-theme)
+The LibCrowds themes can be found on the [LibCrowds organisation page](https://github.com/LibCrowds/).
 
 
 ## Plugins
@@ -119,3 +115,6 @@ The following cron jobs are running on the server:
 - Optimise uploaded images (weekly).
 - Download and install security updates (weekly).
 - Renew SSL certificate (weekly).
+
+The scripts can be found in /etc/cron.daily and /etc/cron.weekly
+
