@@ -7,13 +7,7 @@ related to the various pieces of software in use on the server.
 
 ## Configuration
 
-Copies of any configuration files used on the platform can generally be found at:
-
-```
-/etc/{application} # e.g. /etc/pybossa
-```
-
-Relevant folders for the current software stack include:
+Copies of any configuration files used on the platform can generally be found at /etc/\<application>. Relevant folders for the current software stack include:
 
 - /etc/nginx
 - /etc/gunicorn
