@@ -90,18 +90,3 @@ final results can be download from the
 spreadsheet will be used depends on the workflow established for your particular
 project. For example, it might be checked and edited before being sent off to
 metadata services for the creation of catalogue records.
-
-
-## Uploading images to Flickr
-
-Below are some basic guidelines for uploading images to Flickr, for further help
-please refer to the Flickr documentation.
-
-1. Log in to [Flickr](https://www.flickr.com) using the LibCrowds credentials.
-2. Click the upload icon at the top right of the screen.
-3. Select your images.
-    - **Important:** Wait until all images have loaded before proceeding! To check,
-    scroll to the bottom of the window and wait for the thumbnails to appear.
-4. Click All on the toolbar to select all images.
-5. Click **Add to albums** and create a new album for **this specific LibCrowds project**.
-6. Click **Upload n Photos** at the top right of the screen.
